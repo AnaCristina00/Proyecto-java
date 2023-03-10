@@ -66,7 +66,6 @@ public class Proceso extends javax.swing.JFrame {
         primeranota.setText("NOTA 1:");
         primeranota.setOpaque(true);
 
-        nota1.setEditable(false);
         nota1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         nota1.setAlignmentX(1.0F);
         nota1.setAlignmentY(1.0F);
@@ -81,7 +80,6 @@ public class Proceso extends javax.swing.JFrame {
         segundanota.setText("NOTA 2:");
         segundanota.setOpaque(true);
 
-        nota2.setEditable(false);
         nota2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         nota2.setAlignmentX(1.0F);
         nota2.setAlignmentY(1.0F);
@@ -91,7 +89,6 @@ public class Proceso extends javax.swing.JFrame {
         terceranota.setText("NOTA 3:");
         terceranota.setOpaque(true);
 
-        nota3.setEditable(false);
         nota3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         nota3.setAlignmentX(1.0F);
         nota3.setAlignmentY(1.0F);
@@ -282,17 +279,17 @@ public class Proceso extends javax.swing.JFrame {
         
         //PROCESO
         Double promedio = (num1 + num2 + num3) /3; 
-        DecimalFormat df = new DecimalFormat("#.0");
+        DecimalFormat df = new DecimalFormat("#.00");
         //SALIDA
-        resultado.setText(""+ promedio);
+        resultado.setText(""+ df.format(promedio));
         
         //Fuentes
-        titulo.setFont(new Font(Font.SANS_SERIF,Font.BOLD,22));
-        primeranota.setFont(new Font(Font.SANS_SERIF,Font.BOLD,22));
-        segundanota.setFont(new Font(Font.SANS_SERIF,Font.BOLD,22));
-        terceranota.setFont(new Font(Font.SANS_SERIF,Font.BOLD,22));
-        calcularprom.setFont(new Font(Font.SANS_SERIF,Font.BOLD,22));
-        salir.setFont(new Font(Font.SANS_SERIF,Font.ITALIC,18));
+        titulo.setFont(new Font(Font.SANS_SERIF,Font.BOLD,10));
+        primeranota.setFont(new Font(Font.SANS_SERIF,Font.BOLD,18));
+        segundanota.setFont(new Font(Font.SANS_SERIF,Font.BOLD,18));
+        terceranota.setFont(new Font(Font.SANS_SERIF,Font.BOLD,18));
+        calcularprom.setFont(new Font(Font.SANS_SERIF,Font.BOLD,18));
+        salir.setFont(new Font(Font.SANS_SERIF,Font.ITALIC,15));
     
     }//GEN-LAST:event_calcularpromActionPerformed
 
